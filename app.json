@@ -1,7 +1,7 @@
 {
     "name": "Google Translater",
     "description": "Bot can translate any language to you selected language",
-    "repository": "https://github.com/lntechnical2/Google-Translater-",
+    "repository": "https://github.com/KartikRajOfficials/instasave",
     "keywords": ["Google Translater", "pyrogram", "telegram bot"],
     "env": {
         "TOKEN": {
