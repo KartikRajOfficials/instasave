@@ -14,13 +14,17 @@ API_TOKEN = os.environ['5575049794:AAF-6vH38C9VnlXIVHfrgBGbhWoiev_Hwhs']
 
 HELP_MESSAGE = \
 '''
-Assalomu alaykum xush kelibsiz!
-Instagramdan olingan havolani yuboring!
+Hello and welcome!
+
+
+Submit a link from Instagram!
+
+@Global_Chat_group_1 join here 
 '''
 
 ERROR_MESSAGE = \
 '''
-Siz yuborgan havola xato yoki bu akkount yopilgan.
+The link you sent is incorrect or this account has been closed.
 '''
 
 bot = Bot(token=API_TOKEN)
@@ -69,7 +73,7 @@ async def send_media(message: types.Message):
         description = edges[0]['node']['text']
         await message.answer(description)
     except IndexError:
-        await message.answer('<i>Описание отсутствует.</i>', parse_mode=types.ParseMode.HTML)
+        await message.answer('<i>No description.</i>', parse_mode=types.ParseMode.HTML)
 
 
 if __name__ == '__main__':
